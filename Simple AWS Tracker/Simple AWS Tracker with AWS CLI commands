@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#########################
+
+#Author : Niveditaa Sarkar
+#Date : 6th Aug 2023
+
+# Version : V1
+
+#This script will create a AWS Resource usage report
+
+#########################
+
+
+#AWS EC2
+#AWS S3
+#AWS Lambda
+#AWS IAM USERS
+
+#list s3 buckets
+aws s3 ls
+
+#list ec2 instances
+aws ec2 describe-instances
+
+#list lambda functions
+aws lambda list-functions
+
+#list iam users
+aws iam list-users
