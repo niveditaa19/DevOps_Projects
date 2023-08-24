@@ -366,9 +366,9 @@ Terraform will perform the following actions:
     }
 
 Plan: 9 to add, 0 to change, 0 to destroy.
+l
 
-
-## 5.Finally, terraform apply : Create or update infrastructure
+## 5.Finally, terraform apply : Create or update infrastructure,it will generate 'terraform.tfstate' file for tracking your infrastructure.
 **Output would look like this, combined with the output we got by executing 'terraform plan':**
 
 Do you want to perform these actions?
