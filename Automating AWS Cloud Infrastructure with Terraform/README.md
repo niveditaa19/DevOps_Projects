@@ -62,7 +62,7 @@ Terraform used the selected providers to generate the following execution plan. 
 
 Terraform will perform the following actions:
 
-  # aws_eip.one will be created
+   aws_eip.one will be created
   + resource "aws_eip" "one" {
       + allocation_id             = (known after apply)
       + associate_with_private_ip = "10.0.1.50"
@@ -83,7 +83,7 @@ Terraform will perform the following actions:
       + vpc                       = true
     }
 
-  # aws_instance.web-server-instance will be created
+   aws_instance.web-server-instance will be created
   + resource "aws_instance" "web-server-instance" {
       + ami                                  = "ami-053b0d53c279acc90"
       + arn                                  = (known after apply)
@@ -154,7 +154,7 @@ Terraform will perform the following actions:
       + vpc_id   = (known after apply)
     }
 
-  # aws_network_interface.web-server-nic will be created
+  aws_network_interface.web-server-nic will be created
   + resource "aws_network_interface" "web-server-nic" {
       + arn                       = (known after apply)
       + id                        = (known after apply)
@@ -184,7 +184,7 @@ Terraform will perform the following actions:
       + tags_all                  = (known after apply)
     }
 
-  # aws_route_table.my_route_table will be created
+   aws_route_table.my_route_table will be created
   + resource "aws_route_table" "my_route_table" {
       + arn              = (known after apply)
       + id               = (known after apply)
@@ -231,14 +231,14 @@ Terraform will perform the following actions:
       + vpc_id           = (known after apply)
     }
 
-  # aws_route_table_association.a will be created
+   aws_route_table_association.a will be created
   + resource "aws_route_table_association" "a" {
       + id             = (known after apply)
       + route_table_id = (known after apply)
       + subnet_id      = (known after apply)
     }
 
-  # aws_security_group.allow_web_traffic will be created
+   aws_security_group.allow_web_traffic will be created
   + resource "aws_security_group" "allow_web_traffic" {
       + arn                    = (known after apply)
       + description            = "Allow TLS inbound traffic"
@@ -312,7 +312,7 @@ Terraform will perform the following actions:
       + vpc_id                 = (known after apply)
     }
 
-  # aws_subnet.main_subnet will be created
+   aws_subnet.main_subnet will be created
   + resource "aws_subnet" "main_subnet" {
       + arn                                            = (known after apply)
       + assign_ipv6_address_on_creation                = false
@@ -337,7 +337,7 @@ Terraform will perform the following actions:
       + vpc_id                                         = (known after apply)
     }
 
-  # aws_vpc.my_vpc will be created
+   aws_vpc.my_vpc will be created
   + resource "aws_vpc" "my_vpc" {
       + arn                                  = (known after apply)
       + cidr_block                           = "10.0.0.0/16"
