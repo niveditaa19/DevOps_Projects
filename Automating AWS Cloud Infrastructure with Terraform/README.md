@@ -45,15 +45,6 @@ any changes that are required for your infrastructure. All Terraform commands
 **Output of this command would look like this:**
 
 **vagrant@ubuntu-bionic:~$ terraform validate**
-╷
-│ Warning: Argument is deprecated
-│
-│   with aws_eip.one,
-│   on main.tf line 101, in resource "aws_eip" "one":
-│  101:   vpc                       = true
-│
-│ use domain attribute instead
-╵
 Success! The configuration is valid, but there were some validation warnings as shown above.
 
 ## 3.terraform fmt :  Reformat your configuration in the standard style
@@ -411,16 +402,7 @@ aws_instance.web-server-instance: Creation complete after 16s [id=i-0705151e8203
    **Output would look like this along with the destroy plan :**
    
    Plan: 0 to add, 0 to change, 9 to destroy.
-╷
-│ Warning: Argument is deprecated
-│
-│   with aws_eip.one,
-│   on main.tf line 101, in resource "aws_eip" "one":
-│  101:   vpc                       = true
-│
-│ use domain attribute instead
-╵
-
+   
 Do you really want to destroy all resources?
   Terraform will destroy all your managed infrastructure, as shown above.
   There is no undo. Only 'yes' will be accepted to confirm.
