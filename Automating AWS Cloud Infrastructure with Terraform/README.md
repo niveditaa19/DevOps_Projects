@@ -2,9 +2,9 @@ Create an EC2 instance, deploy on a custom VPC and custom subnet and assign a pu
 
 What you will need:
 
-• AWS account • Linux • Any Source Code Editor
+**• AWS account • Linux • Any Source Code Editor**
 
-STEPS
+**STEPS**
 
 1.Create a Key Pair
 2.Create a VPC
@@ -17,12 +17,12 @@ STEPS
 9.Assign an Elastic IP address to the network interface created in step 8
 10.Create an Ubuntu server and install/enable Apache2
 
-After adding this main.tf file to your pwd execute the below terraform commands:
+**After adding this main.tf file to your pwd execute the below terraform commands:**
 
-1.terraform init : Prepare your working directory for other commands
-Output of this command will look like this :
+## 1.terraform init : Prepare your working directory for other commands
+**Output of this command will look like this :**
 
-vagrant@ubuntu-bionic:~$ terraform init
+**vagrant@ubuntu-bionic:~$ terraform init**
 
 Initializing the backend...
 
@@ -41,10 +41,10 @@ Terraform has been successfully initialized!
 You may now begin working with Terraform. Try running "terraform plan" to see
 any changes that are required for your infrastructure. All Terraform commands
 
-2.terraform validate : Check whether the configuration is valid
-Output of this command would look like this:
+## 2.terraform validate : Check whether the configuration is valid
+**Output of this command would look like this:**
 
-vagrant@ubuntu-bionic:~$ terraform validate
+**vagrant@ubuntu-bionic:~$ terraform validate**
 ╷
 │ Warning: Argument is deprecated
 │
@@ -56,15 +56,15 @@ vagrant@ubuntu-bionic:~$ terraform validate
 ╵
 Success! The configuration is valid, but there were some validation warnings as shown above.
 
-3.terraform fmt :  Reformat your configuration in the standard style
-Output of this command would look like this:
+## 3.terraform fmt :  Reformat your configuration in the standard style
+**Output of this command would look like this:**
 
-vagrant@ubuntu-bionic:~$ terraform fmt
+**vagrant@ubuntu-bionic:~$ terraform fmt**
 main.tf
 
-4.terraform plan :
-Output of this command would look like this:
-vagrant@ubuntu-bionic:~$ terraform plan
+## 4.terraform plan :
+**Output of this command would look like this:**
+**vagrant@ubuntu-bionic:~$ terraform plan**
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -377,8 +377,8 @@ Terraform will perform the following actions:
 Plan: 9 to add, 0 to change, 0 to destroy.
 
 
-5.Finally, terraform apply : Create or update infrastructure
-Output would look like this, combined with the output we got by executing 'terraform plan':
+## 5.Finally, terraform apply : Create or update infrastructure
+**Output would look like this, combined with the output we got by executing 'terraform plan':**
 
 Do you want to perform these actions?
 
@@ -406,9 +406,9 @@ aws_route_table_association.a: Creation complete after 1s [id=rtbassoc-0967a09e1
 aws_instance.web-server-instance: Still creating... [10s elapsed]
 aws_instance.web-server-instance: Creation complete after 16s [id=i-0705151e8203c5720]
 
-6. Lastly, if you want to clean up your infrastructure after practice you can execute
-   terraform destroy : Destroy previously-created infrastructure
-   Output would look like this along with the destroy plan :
+## 6. Lastly, if you want to clean up your infrastructure after practice you can execute
+  **terraform destroy : Destroy previously-created infrastructure**
+   **Output would look like this along with the destroy plan :**
    
    Plan: 0 to add, 0 to change, 9 to destroy.
 ╷
